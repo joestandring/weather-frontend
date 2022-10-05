@@ -1,0 +1,55 @@
+@import "../../node_modules/antd/dist/antd.less";
+
+/* Color definitions */
+@dark-gray: #262626;
+
+/* Ensure layout height is always >= view height */
+.layout {
+  min-height: 100vh;
+}
+
+/* Wraps all content components in flex for alignment */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(3px);
+}
+
+/* Sets the content background to match the current weather condition */
+.bg-rain {
+  background-image: url("/public/backgrounds/rain.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Horizontally centers and sizes all elements in the search group */
+.search-group {
+  align-items: center;
+  justify-content: center;
+  width: 50vh;
+}
+
+/* Set minimum size for weather icon */
+.search-group img {
+  min-width: 250px;
+  padding: 0;
+}
+
+/* Add space between search bar and description text */
+.search-bar {
+  margin-bottom: 8px;
+}
+
+.search-description {
+  color: @white;
+}
+
+.footer {
+  text-align: center;
+  background-color: @dark-gray;
+}
+
+.footer span {
+  color: @white;
+}
