@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Layout } from 'antd';
 import './style/theme.css';
 import SearchGroup from './components/SearchGroup';
@@ -12,10 +12,12 @@ const { Content, Footer } = Layout;
  * @component
  */
 function App() {
+  const [weatherData, setWeatherData] = useState(null);
+
   return (
     <Layout className="layout bg-rain">
       <Content className="content">
-        <SearchGroup />
+        <SearchGroup setWeatherData={setWeatherData} weatherData={weatherData} />
       </Content>
       <Footer className="footer">
         <FooterContent />
