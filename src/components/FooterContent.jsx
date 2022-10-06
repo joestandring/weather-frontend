@@ -13,6 +13,8 @@ function FooterContent() {
     <Text>
       Made with
       <a href="https://openweathermap.org/"> OpenWeatherMap </a>
+      | Photos from
+      <a href="https://unsplash.com/"> Unsplash</a>
     </Text>
   );
 }
