@@ -23,26 +23,21 @@
   background-position: center center;
 }
 
-/* Horizontally centers and sizes all elements in the search group */
-.search-group {
-  align-items: center;
-  justify-content: center;
-  width: 50vh;
-}
-
 /* Set minimum size for weather icon */
 .search-group img {
   min-width: 250px;
   padding: 0;
 }
 
-/* Add space between search bar and description text */
-.search-bar {
-  margin-bottom: 8px;
-}
-
 .search-description {
   color: @white;
+  width: 100%;
+  text-align: center;
+  margin-top: 4px;
+}
+
+.container {
+  width: 50vh;
 }
 
 .footer {
@@ -52,4 +47,24 @@
 
 .footer span {
   color: @white;
+}
+
+.weather-icon {
+  justify-content: center;
+}
+
+.weather-description {
+  font-size: x-large;
+  color: @white;
+}
+
+.weather-description-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.highlight {
+  color: @blue-5;
 }

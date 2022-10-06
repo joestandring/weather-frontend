@@ -26176,23 +26176,19 @@ div.ant-typography-edit-content.ant-typography-rtl {
   background-size: cover;
   background-position: center center;
 }
-/* Horizontally centers and sizes all elements in the search group */
-.search-group {
-  align-items: center;
-  justify-content: center;
-  width: 50vh;
-}
 /* Set minimum size for weather icon */
 .search-group img {
   min-width: 250px;
   padding: 0;
 }
-/* Add space between search bar and description text */
-.search-bar {
-  margin-bottom: 8px;
-}
 .search-description {
   color: #fff;
+  width: 100%;
+  text-align: center;
+  margin-top: 4px;
+}
+.container {
+  width: 50vh;
 }
 .footer {
   text-align: center;
@@ -26200,4 +26196,20 @@ div.ant-typography-edit-content.ant-typography-rtl {
 }
 .footer span {
   color: #fff;
+}
+.weather-icon {
+  justify-content: center;
+}
+.weather-description {
+  font-size: x-large;
+  color: #fff;
+}
+.weather-description-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 15px;
+  margin-top: 20px;
+}
+.highlight {
+  color: #40a9ff;
 }
